@@ -16,18 +16,38 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.main-container {
+  margin: 0px auto;
+}
+
+.result-wrapper {
+  margin: 12px auto;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 24px 0px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.excel-button {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
 }
